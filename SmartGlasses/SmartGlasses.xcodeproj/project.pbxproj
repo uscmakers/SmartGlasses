@@ -7,63 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E1C1DC125F1D7FB00075A42 /* SmartGlassesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C1DC025F1D7FB00075A42 /* SmartGlassesApp.swift */; };
-		5E1C1DC325F1D7FB00075A42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C1DC225F1D7FB00075A42 /* ContentView.swift */; };
-		5E1C1DC525F1D7FC00075A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E1C1DC425F1D7FC00075A42 /* Assets.xcassets */; };
-		5E1C1DC825F1D7FC00075A42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E1C1DC725F1D7FC00075A42 /* Preview Assets.xcassets */; };
-		5E1C1DD425F1D7FD00075A42 /* SmartGlassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C1DD325F1D7FD00075A42 /* SmartGlassesTests.swift */; };
-		5E1C1DDF25F1D7FD00075A42 /* SmartGlassesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C1DDE25F1D7FD00075A42 /* SmartGlassesUITests.swift */; };
+		5E0A419725F2F9A100B3A5E4 /* SmartGlassesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A419625F2F9A100B3A5E4 /* SmartGlassesApp.swift */; };
+		5E0A419925F2F9A100B3A5E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A419825F2F9A100B3A5E4 /* ContentView.swift */; };
+		5E0A419B25F2F9A300B3A5E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A419A25F2F9A300B3A5E4 /* Assets.xcassets */; };
+		5E0A419E25F2F9A300B3A5E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A419D25F2F9A300B3A5E4 /* Preview Assets.xcassets */; };
+		5E0A41A925F2F9A300B3A5E4 /* SmartGlassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41A825F2F9A300B3A5E4 /* SmartGlassesTests.swift */; };
+		5E0A41B425F2F9A300B3A5E4 /* SmartGlassesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41B325F2F9A300B3A5E4 /* SmartGlassesUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5E1C1DD025F1D7FD00075A42 /* PBXContainerItemProxy */ = {
+		5E0A41A525F2F9A300B3A5E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5E1C1DB525F1D7FB00075A42 /* Project object */;
+			containerPortal = 5E0A418B25F2F9A100B3A5E4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5E1C1DBC25F1D7FB00075A42;
+			remoteGlobalIDString = 5E0A419225F2F9A100B3A5E4;
 			remoteInfo = SmartGlasses;
 		};
-		5E1C1DDB25F1D7FD00075A42 /* PBXContainerItemProxy */ = {
+		5E0A41B025F2F9A300B3A5E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5E1C1DB525F1D7FB00075A42 /* Project object */;
+			containerPortal = 5E0A418B25F2F9A100B3A5E4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5E1C1DBC25F1D7FB00075A42;
+			remoteGlobalIDString = 5E0A419225F2F9A100B3A5E4;
 			remoteInfo = SmartGlasses;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E1C1DBD25F1D7FB00075A42 /* SmartGlasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartGlasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E1C1DC025F1D7FB00075A42 /* SmartGlassesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGlassesApp.swift; sourceTree = "<group>"; };
-		5E1C1DC225F1D7FB00075A42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5E1C1DC425F1D7FC00075A42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5E1C1DC725F1D7FC00075A42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5E1C1DC925F1D7FC00075A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E1C1DCA25F1D7FC00075A42 /* SmartGlasses.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartGlasses.entitlements; sourceTree = "<group>"; };
-		5E1C1DCF25F1D7FD00075A42 /* SmartGlassesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartGlassesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E1C1DD325F1D7FD00075A42 /* SmartGlassesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGlassesTests.swift; sourceTree = "<group>"; };
-		5E1C1DD525F1D7FD00075A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E1C1DDA25F1D7FD00075A42 /* SmartGlassesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartGlassesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E1C1DDE25F1D7FD00075A42 /* SmartGlassesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGlassesUITests.swift; sourceTree = "<group>"; };
-		5E1C1DE025F1D7FD00075A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E0A419325F2F9A100B3A5E4 /* SmartGlasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartGlasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0A419625F2F9A100B3A5E4 /* SmartGlassesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGlassesApp.swift; sourceTree = "<group>"; };
+		5E0A419825F2F9A100B3A5E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E0A419A25F2F9A300B3A5E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E0A419D25F2F9A300B3A5E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E0A419F25F2F9A300B3A5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E0A41A425F2F9A300B3A5E4 /* SmartGlassesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartGlassesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0A41A825F2F9A300B3A5E4 /* SmartGlassesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGlassesTests.swift; sourceTree = "<group>"; };
+		5E0A41AA25F2F9A300B3A5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E0A41AF25F2F9A300B3A5E4 /* SmartGlassesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartGlassesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0A41B325F2F9A300B3A5E4 /* SmartGlassesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGlassesUITests.swift; sourceTree = "<group>"; };
+		5E0A41B525F2F9A300B3A5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E1C1DBA25F1D7FB00075A42 /* Frameworks */ = {
+		5E0A419025F2F9A100B3A5E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E1C1DCC25F1D7FD00075A42 /* Frameworks */ = {
+		5E0A41A125F2F9A300B3A5E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E1C1DD725F1D7FD00075A42 /* Frameworks */ = {
+		5E0A41AC25F2F9A300B3A5E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,61 +72,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E1C1DB425F1D7FB00075A42 = {
+		5E0A418A25F2F9A100B3A5E4 = {
 			isa = PBXGroup;
 			children = (
-				5E1C1DBF25F1D7FB00075A42 /* SmartGlasses */,
-				5E1C1DD225F1D7FD00075A42 /* SmartGlassesTests */,
-				5E1C1DDD25F1D7FD00075A42 /* SmartGlassesUITests */,
-				5E1C1DBE25F1D7FB00075A42 /* Products */,
+				5E0A419525F2F9A100B3A5E4 /* SmartGlasses */,
+				5E0A41A725F2F9A300B3A5E4 /* SmartGlassesTests */,
+				5E0A41B225F2F9A300B3A5E4 /* SmartGlassesUITests */,
+				5E0A419425F2F9A100B3A5E4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5E1C1DBE25F1D7FB00075A42 /* Products */ = {
+		5E0A419425F2F9A100B3A5E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E1C1DBD25F1D7FB00075A42 /* SmartGlasses.app */,
-				5E1C1DCF25F1D7FD00075A42 /* SmartGlassesTests.xctest */,
-				5E1C1DDA25F1D7FD00075A42 /* SmartGlassesUITests.xctest */,
+				5E0A419325F2F9A100B3A5E4 /* SmartGlasses.app */,
+				5E0A41A425F2F9A300B3A5E4 /* SmartGlassesTests.xctest */,
+				5E0A41AF25F2F9A300B3A5E4 /* SmartGlassesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5E1C1DBF25F1D7FB00075A42 /* SmartGlasses */ = {
+		5E0A419525F2F9A100B3A5E4 /* SmartGlasses */ = {
 			isa = PBXGroup;
 			children = (
-				5E1C1DC025F1D7FB00075A42 /* SmartGlassesApp.swift */,
-				5E1C1DC225F1D7FB00075A42 /* ContentView.swift */,
-				5E1C1DC425F1D7FC00075A42 /* Assets.xcassets */,
-				5E1C1DC925F1D7FC00075A42 /* Info.plist */,
-				5E1C1DCA25F1D7FC00075A42 /* SmartGlasses.entitlements */,
-				5E1C1DC625F1D7FC00075A42 /* Preview Content */,
+				5E0A419625F2F9A100B3A5E4 /* SmartGlassesApp.swift */,
+				5E0A419825F2F9A100B3A5E4 /* ContentView.swift */,
+				5E0A419A25F2F9A300B3A5E4 /* Assets.xcassets */,
+				5E0A419F25F2F9A300B3A5E4 /* Info.plist */,
+				5E0A419C25F2F9A300B3A5E4 /* Preview Content */,
 			);
 			path = SmartGlasses;
 			sourceTree = "<group>";
 		};
-		5E1C1DC625F1D7FC00075A42 /* Preview Content */ = {
+		5E0A419C25F2F9A300B3A5E4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5E1C1DC725F1D7FC00075A42 /* Preview Assets.xcassets */,
+				5E0A419D25F2F9A300B3A5E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5E1C1DD225F1D7FD00075A42 /* SmartGlassesTests */ = {
+		5E0A41A725F2F9A300B3A5E4 /* SmartGlassesTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E1C1DD325F1D7FD00075A42 /* SmartGlassesTests.swift */,
-				5E1C1DD525F1D7FD00075A42 /* Info.plist */,
+				5E0A41A825F2F9A300B3A5E4 /* SmartGlassesTests.swift */,
+				5E0A41AA25F2F9A300B3A5E4 /* Info.plist */,
 			);
 			path = SmartGlassesTests;
 			sourceTree = "<group>";
 		};
-		5E1C1DDD25F1D7FD00075A42 /* SmartGlassesUITests */ = {
+		5E0A41B225F2F9A300B3A5E4 /* SmartGlassesUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5E1C1DDE25F1D7FD00075A42 /* SmartGlassesUITests.swift */,
-				5E1C1DE025F1D7FD00075A42 /* Info.plist */,
+				5E0A41B325F2F9A300B3A5E4 /* SmartGlassesUITests.swift */,
+				5E0A41B525F2F9A300B3A5E4 /* Info.plist */,
 			);
 			path = SmartGlassesUITests;
 			sourceTree = "<group>";
@@ -135,13 +133,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E1C1DBC25F1D7FB00075A42 /* SmartGlasses */ = {
+		5E0A419225F2F9A100B3A5E4 /* SmartGlasses */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E1C1DE325F1D7FD00075A42 /* Build configuration list for PBXNativeTarget "SmartGlasses" */;
+			buildConfigurationList = 5E0A41B825F2F9A300B3A5E4 /* Build configuration list for PBXNativeTarget "SmartGlasses" */;
 			buildPhases = (
-				5E1C1DB925F1D7FB00075A42 /* Sources */,
-				5E1C1DBA25F1D7FB00075A42 /* Frameworks */,
-				5E1C1DBB25F1D7FB00075A42 /* Resources */,
+				5E0A418F25F2F9A100B3A5E4 /* Sources */,
+				5E0A419025F2F9A100B3A5E4 /* Frameworks */,
+				5E0A419125F2F9A100B3A5E4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -149,68 +147,68 @@
 			);
 			name = SmartGlasses;
 			productName = SmartGlasses;
-			productReference = 5E1C1DBD25F1D7FB00075A42 /* SmartGlasses.app */;
+			productReference = 5E0A419325F2F9A100B3A5E4 /* SmartGlasses.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5E1C1DCE25F1D7FD00075A42 /* SmartGlassesTests */ = {
+		5E0A41A325F2F9A300B3A5E4 /* SmartGlassesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E1C1DE625F1D7FD00075A42 /* Build configuration list for PBXNativeTarget "SmartGlassesTests" */;
+			buildConfigurationList = 5E0A41BB25F2F9A300B3A5E4 /* Build configuration list for PBXNativeTarget "SmartGlassesTests" */;
 			buildPhases = (
-				5E1C1DCB25F1D7FD00075A42 /* Sources */,
-				5E1C1DCC25F1D7FD00075A42 /* Frameworks */,
-				5E1C1DCD25F1D7FD00075A42 /* Resources */,
+				5E0A41A025F2F9A300B3A5E4 /* Sources */,
+				5E0A41A125F2F9A300B3A5E4 /* Frameworks */,
+				5E0A41A225F2F9A300B3A5E4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5E1C1DD125F1D7FD00075A42 /* PBXTargetDependency */,
+				5E0A41A625F2F9A300B3A5E4 /* PBXTargetDependency */,
 			);
 			name = SmartGlassesTests;
 			productName = SmartGlassesTests;
-			productReference = 5E1C1DCF25F1D7FD00075A42 /* SmartGlassesTests.xctest */;
+			productReference = 5E0A41A425F2F9A300B3A5E4 /* SmartGlassesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5E1C1DD925F1D7FD00075A42 /* SmartGlassesUITests */ = {
+		5E0A41AE25F2F9A300B3A5E4 /* SmartGlassesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E1C1DE925F1D7FD00075A42 /* Build configuration list for PBXNativeTarget "SmartGlassesUITests" */;
+			buildConfigurationList = 5E0A41BE25F2F9A300B3A5E4 /* Build configuration list for PBXNativeTarget "SmartGlassesUITests" */;
 			buildPhases = (
-				5E1C1DD625F1D7FD00075A42 /* Sources */,
-				5E1C1DD725F1D7FD00075A42 /* Frameworks */,
-				5E1C1DD825F1D7FD00075A42 /* Resources */,
+				5E0A41AB25F2F9A300B3A5E4 /* Sources */,
+				5E0A41AC25F2F9A300B3A5E4 /* Frameworks */,
+				5E0A41AD25F2F9A300B3A5E4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5E1C1DDC25F1D7FD00075A42 /* PBXTargetDependency */,
+				5E0A41B125F2F9A300B3A5E4 /* PBXTargetDependency */,
 			);
 			name = SmartGlassesUITests;
 			productName = SmartGlassesUITests;
-			productReference = 5E1C1DDA25F1D7FD00075A42 /* SmartGlassesUITests.xctest */;
+			productReference = 5E0A41AF25F2F9A300B3A5E4 /* SmartGlassesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5E1C1DB525F1D7FB00075A42 /* Project object */ = {
+		5E0A418B25F2F9A100B3A5E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					5E1C1DBC25F1D7FB00075A42 = {
+					5E0A419225F2F9A100B3A5E4 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					5E1C1DCE25F1D7FD00075A42 = {
+					5E0A41A325F2F9A300B3A5E4 = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 5E1C1DBC25F1D7FB00075A42;
+						TestTargetID = 5E0A419225F2F9A100B3A5E4;
 					};
-					5E1C1DD925F1D7FD00075A42 = {
+					5E0A41AE25F2F9A300B3A5E4 = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 5E1C1DBC25F1D7FB00075A42;
+						TestTargetID = 5E0A419225F2F9A100B3A5E4;
 					};
 				};
 			};
-			buildConfigurationList = 5E1C1DB825F1D7FB00075A42 /* Build configuration list for PBXProject "SmartGlasses" */;
+			buildConfigurationList = 5E0A418E25F2F9A100B3A5E4 /* Build configuration list for PBXProject "SmartGlasses" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,36 +216,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 5E1C1DB425F1D7FB00075A42;
-			productRefGroup = 5E1C1DBE25F1D7FB00075A42 /* Products */;
+			mainGroup = 5E0A418A25F2F9A100B3A5E4;
+			productRefGroup = 5E0A419425F2F9A100B3A5E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E1C1DBC25F1D7FB00075A42 /* SmartGlasses */,
-				5E1C1DCE25F1D7FD00075A42 /* SmartGlassesTests */,
-				5E1C1DD925F1D7FD00075A42 /* SmartGlassesUITests */,
+				5E0A419225F2F9A100B3A5E4 /* SmartGlasses */,
+				5E0A41A325F2F9A300B3A5E4 /* SmartGlassesTests */,
+				5E0A41AE25F2F9A300B3A5E4 /* SmartGlassesUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5E1C1DBB25F1D7FB00075A42 /* Resources */ = {
+		5E0A419125F2F9A100B3A5E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E1C1DC825F1D7FC00075A42 /* Preview Assets.xcassets in Resources */,
-				5E1C1DC525F1D7FC00075A42 /* Assets.xcassets in Resources */,
+				5E0A419E25F2F9A300B3A5E4 /* Preview Assets.xcassets in Resources */,
+				5E0A419B25F2F9A300B3A5E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E1C1DCD25F1D7FD00075A42 /* Resources */ = {
+		5E0A41A225F2F9A300B3A5E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E1C1DD825F1D7FD00075A42 /* Resources */ = {
+		5E0A41AD25F2F9A300B3A5E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,48 +255,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5E1C1DB925F1D7FB00075A42 /* Sources */ = {
+		5E0A418F25F2F9A100B3A5E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E1C1DC325F1D7FB00075A42 /* ContentView.swift in Sources */,
-				5E1C1DC125F1D7FB00075A42 /* SmartGlassesApp.swift in Sources */,
+				5E0A419925F2F9A100B3A5E4 /* ContentView.swift in Sources */,
+				5E0A419725F2F9A100B3A5E4 /* SmartGlassesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E1C1DCB25F1D7FD00075A42 /* Sources */ = {
+		5E0A41A025F2F9A300B3A5E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E1C1DD425F1D7FD00075A42 /* SmartGlassesTests.swift in Sources */,
+				5E0A41A925F2F9A300B3A5E4 /* SmartGlassesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E1C1DD625F1D7FD00075A42 /* Sources */ = {
+		5E0A41AB25F2F9A300B3A5E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E1C1DDF25F1D7FD00075A42 /* SmartGlassesUITests.swift in Sources */,
+				5E0A41B425F2F9A300B3A5E4 /* SmartGlassesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5E1C1DD125F1D7FD00075A42 /* PBXTargetDependency */ = {
+		5E0A41A625F2F9A300B3A5E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5E1C1DBC25F1D7FB00075A42 /* SmartGlasses */;
-			targetProxy = 5E1C1DD025F1D7FD00075A42 /* PBXContainerItemProxy */;
+			target = 5E0A419225F2F9A100B3A5E4 /* SmartGlasses */;
+			targetProxy = 5E0A41A525F2F9A300B3A5E4 /* PBXContainerItemProxy */;
 		};
-		5E1C1DDC25F1D7FD00075A42 /* PBXTargetDependency */ = {
+		5E0A41B125F2F9A300B3A5E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5E1C1DBC25F1D7FB00075A42 /* SmartGlasses */;
-			targetProxy = 5E1C1DDB25F1D7FD00075A42 /* PBXContainerItemProxy */;
+			target = 5E0A419225F2F9A100B3A5E4 /* SmartGlasses */;
+			targetProxy = 5E0A41B025F2F9A300B3A5E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5E1C1DE125F1D7FD00075A42 /* Debug */ = {
+		5E0A41B625F2F9A300B3A5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -349,17 +347,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		5E1C1DE225F1D7FD00075A42 /* Release */ = {
+		5E0A41B725F2F9A300B3A5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -404,135 +402,140 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		5E1C1DE425F1D7FD00075A42 /* Debug */ = {
+		5E0A41B925F2F9A300B3A5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SmartGlasses/SmartGlasses.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartGlasses/Preview Content\"";
+				DEVELOPMENT_TEAM = LJ32KZVZ54;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SmartGlasses/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.devinmui.SmartGlasses;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinmui.SmartGlasses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		5E1C1DE525F1D7FD00075A42 /* Release */ = {
+		5E0A41BA25F2F9A300B3A5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SmartGlasses/SmartGlasses.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartGlasses/Preview Content\"";
+				DEVELOPMENT_TEAM = LJ32KZVZ54;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SmartGlasses/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.devinmui.SmartGlasses;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinmui.SmartGlasses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		5E1C1DE725F1D7FD00075A42 /* Debug */ = {
+		5E0A41BC25F2F9A300B3A5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LJ32KZVZ54;
 				INFOPLIST_FILE = SmartGlassesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.devinmui.SmartGlassesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinmui.SmartGlassesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartGlasses.app/Contents/MacOS/SmartGlasses";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartGlasses.app/SmartGlasses";
 			};
 			name = Debug;
 		};
-		5E1C1DE825F1D7FD00075A42 /* Release */ = {
+		5E0A41BD25F2F9A300B3A5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LJ32KZVZ54;
 				INFOPLIST_FILE = SmartGlassesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.devinmui.SmartGlassesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinmui.SmartGlassesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartGlasses.app/Contents/MacOS/SmartGlasses";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartGlasses.app/SmartGlasses";
 			};
 			name = Release;
 		};
-		5E1C1DEA25F1D7FD00075A42 /* Debug */ = {
+		5E0A41BF25F2F9A300B3A5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LJ32KZVZ54;
 				INFOPLIST_FILE = SmartGlassesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.devinmui.SmartGlassesUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinmui.SmartGlassesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SmartGlasses;
 			};
 			name = Debug;
 		};
-		5E1C1DEB25F1D7FD00075A42 /* Release */ = {
+		5E0A41C025F2F9A300B3A5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LJ32KZVZ54;
 				INFOPLIST_FILE = SmartGlassesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.devinmui.SmartGlassesUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devinmui.SmartGlassesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SmartGlasses;
 			};
 			name = Release;
@@ -540,43 +543,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E1C1DB825F1D7FB00075A42 /* Build configuration list for PBXProject "SmartGlasses" */ = {
+		5E0A418E25F2F9A100B3A5E4 /* Build configuration list for PBXProject "SmartGlasses" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E1C1DE125F1D7FD00075A42 /* Debug */,
-				5E1C1DE225F1D7FD00075A42 /* Release */,
+				5E0A41B625F2F9A300B3A5E4 /* Debug */,
+				5E0A41B725F2F9A300B3A5E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E1C1DE325F1D7FD00075A42 /* Build configuration list for PBXNativeTarget "SmartGlasses" */ = {
+		5E0A41B825F2F9A300B3A5E4 /* Build configuration list for PBXNativeTarget "SmartGlasses" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E1C1DE425F1D7FD00075A42 /* Debug */,
-				5E1C1DE525F1D7FD00075A42 /* Release */,
+				5E0A41B925F2F9A300B3A5E4 /* Debug */,
+				5E0A41BA25F2F9A300B3A5E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E1C1DE625F1D7FD00075A42 /* Build configuration list for PBXNativeTarget "SmartGlassesTests" */ = {
+		5E0A41BB25F2F9A300B3A5E4 /* Build configuration list for PBXNativeTarget "SmartGlassesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E1C1DE725F1D7FD00075A42 /* Debug */,
-				5E1C1DE825F1D7FD00075A42 /* Release */,
+				5E0A41BC25F2F9A300B3A5E4 /* Debug */,
+				5E0A41BD25F2F9A300B3A5E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E1C1DE925F1D7FD00075A42 /* Build configuration list for PBXNativeTarget "SmartGlassesUITests" */ = {
+		5E0A41BE25F2F9A300B3A5E4 /* Build configuration list for PBXNativeTarget "SmartGlassesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E1C1DEA25F1D7FD00075A42 /* Debug */,
-				5E1C1DEB25F1D7FD00075A42 /* Release */,
+				5E0A41BF25F2F9A300B3A5E4 /* Debug */,
+				5E0A41C025F2F9A300B3A5E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5E1C1DB525F1D7FB00075A42 /* Project object */;
+	rootObject = 5E0A418B25F2F9A100B3A5E4 /* Project object */;
 }
