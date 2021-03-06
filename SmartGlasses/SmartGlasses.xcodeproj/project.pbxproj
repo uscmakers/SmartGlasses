@@ -3,16 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D5E111DBDC7C9519B77CA00 /* Pods_SmartGlasses_SmartGlassesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F93AA6120D5160BF8CFF7E /* Pods_SmartGlasses_SmartGlassesUITests.framework */; };
 		5E0A419725F2F9A100B3A5E4 /* SmartGlassesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A419625F2F9A100B3A5E4 /* SmartGlassesApp.swift */; };
 		5E0A419925F2F9A100B3A5E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A419825F2F9A100B3A5E4 /* ContentView.swift */; };
 		5E0A419B25F2F9A300B3A5E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A419A25F2F9A300B3A5E4 /* Assets.xcassets */; };
 		5E0A419E25F2F9A300B3A5E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A419D25F2F9A300B3A5E4 /* Preview Assets.xcassets */; };
 		5E0A41A925F2F9A300B3A5E4 /* SmartGlassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41A825F2F9A300B3A5E4 /* SmartGlassesTests.swift */; };
 		5E0A41B425F2F9A300B3A5E4 /* SmartGlassesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41B325F2F9A300B3A5E4 /* SmartGlassesUITests.swift */; };
+		B8067DF5E3A4D4BB38966D36 /* Pods_SmartGlassesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D74EF9A43339A385DE07BD6 /* Pods_SmartGlassesTests.framework */; };
+		EF09CF9A601FC8E9F322CF03 /* Pods_SmartGlasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867FF157B4CEC83E148570E4 /* Pods_SmartGlasses.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07619EBCFD7D5DAAF5B0B7A1 /* Pods-SmartGlassesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGlassesTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartGlassesTests/Pods-SmartGlassesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FB90666F8298CBED58C678F /* Pods-SmartGlasses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGlasses.debug.xcconfig"; path = "Target Support Files/Pods-SmartGlasses/Pods-SmartGlasses.debug.xcconfig"; sourceTree = "<group>"; };
+		23B04D035CA66CBED58C84AD /* Pods-SmartGlasses-SmartGlassesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGlasses-SmartGlassesUITests.release.xcconfig"; path = "Target Support Files/Pods-SmartGlasses-SmartGlassesUITests/Pods-SmartGlasses-SmartGlassesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2C712650829BCA435FFAB4FB /* Pods-SmartGlasses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGlasses.release.xcconfig"; path = "Target Support Files/Pods-SmartGlasses/Pods-SmartGlasses.release.xcconfig"; sourceTree = "<group>"; };
+		31F93AA6120D5160BF8CFF7E /* Pods_SmartGlasses_SmartGlassesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGlasses_SmartGlassesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D74EF9A43339A385DE07BD6 /* Pods_SmartGlassesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGlassesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		448E7AE3914378C8E5E7FDAC /* Pods-SmartGlasses-SmartGlassesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGlasses-SmartGlassesUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartGlasses-SmartGlassesUITests/Pods-SmartGlasses-SmartGlassesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E0A419325F2F9A100B3A5E4 /* SmartGlasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartGlasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0A419625F2F9A100B3A5E4 /* SmartGlassesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGlassesApp.swift; sourceTree = "<group>"; };
 		5E0A419825F2F9A100B3A5E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +55,8 @@
 		5E0A41AF25F2F9A300B3A5E4 /* SmartGlassesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartGlassesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0A41B325F2F9A300B3A5E4 /* SmartGlassesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGlassesUITests.swift; sourceTree = "<group>"; };
 		5E0A41B525F2F9A300B3A5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		867FF157B4CEC83E148570E4 /* Pods_SmartGlasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGlasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32185ABD3475122A230FE10 /* Pods-SmartGlassesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGlassesTests.release.xcconfig"; path = "Target Support Files/Pods-SmartGlassesTests/Pods-SmartGlassesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF09CF9A601FC8E9F322CF03 /* Pods_SmartGlasses.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8067DF5E3A4D4BB38966D36 /* Pods_SmartGlassesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5E111DBDC7C9519B77CA00 /* Pods_SmartGlasses_SmartGlassesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,8 @@
 				5E0A41A725F2F9A300B3A5E4 /* SmartGlassesTests */,
 				5E0A41B225F2F9A300B3A5E4 /* SmartGlassesUITests */,
 				5E0A419425F2F9A100B3A5E4 /* Products */,
+				C58832FBFA706DA21A71271C /* Pods */,
+				9ADC1AABA4F35B2828644392 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +147,29 @@
 			path = SmartGlassesUITests;
 			sourceTree = "<group>";
 		};
+		9ADC1AABA4F35B2828644392 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				867FF157B4CEC83E148570E4 /* Pods_SmartGlasses.framework */,
+				31F93AA6120D5160BF8CFF7E /* Pods_SmartGlasses_SmartGlassesUITests.framework */,
+				3D74EF9A43339A385DE07BD6 /* Pods_SmartGlassesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C58832FBFA706DA21A71271C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FB90666F8298CBED58C678F /* Pods-SmartGlasses.debug.xcconfig */,
+				2C712650829BCA435FFAB4FB /* Pods-SmartGlasses.release.xcconfig */,
+				448E7AE3914378C8E5E7FDAC /* Pods-SmartGlasses-SmartGlassesUITests.debug.xcconfig */,
+				23B04D035CA66CBED58C84AD /* Pods-SmartGlasses-SmartGlassesUITests.release.xcconfig */,
+				07619EBCFD7D5DAAF5B0B7A1 /* Pods-SmartGlassesTests.debug.xcconfig */,
+				B32185ABD3475122A230FE10 /* Pods-SmartGlassesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E0A41B825F2F9A300B3A5E4 /* Build configuration list for PBXNativeTarget "SmartGlasses" */;
 			buildPhases = (
+				C8CA80144C9DF5BB28532002 /* [CP] Check Pods Manifest.lock */,
 				5E0A418F25F2F9A100B3A5E4 /* Sources */,
 				5E0A419025F2F9A100B3A5E4 /* Frameworks */,
 				5E0A419125F2F9A100B3A5E4 /* Resources */,
+				82D2020ACEFA75EF30F915B3 /* [CP] Embed Pods Frameworks */,
+				2BC7735A70C8BE60654FF8E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E0A41BB25F2F9A300B3A5E4 /* Build configuration list for PBXNativeTarget "SmartGlassesTests" */;
 			buildPhases = (
+				F9EEF392FC9662700964F792 /* [CP] Check Pods Manifest.lock */,
 				5E0A41A025F2F9A300B3A5E4 /* Sources */,
 				5E0A41A125F2F9A300B3A5E4 /* Frameworks */,
 				5E0A41A225F2F9A300B3A5E4 /* Resources */,
@@ -172,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E0A41BE25F2F9A300B3A5E4 /* Build configuration list for PBXNativeTarget "SmartGlassesUITests" */;
 			buildPhases = (
+				968D3D17AFA0AA51835EF413 /* [CP] Check Pods Manifest.lock */,
 				5E0A41AB25F2F9A300B3A5E4 /* Sources */,
 				5E0A41AC25F2F9A300B3A5E4 /* Frameworks */,
 				5E0A41AD25F2F9A300B3A5E4 /* Resources */,
+				8E3AAADDE43E7E119C5E1547 /* [CP] Embed Pods Frameworks */,
+				0F857C016359316ACF30A70C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +300,143 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F857C016359316ACF30A70C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses-SmartGlassesUITests/Pods-SmartGlasses-SmartGlassesUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses-SmartGlassesUITests/Pods-SmartGlasses-SmartGlassesUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses-SmartGlassesUITests/Pods-SmartGlasses-SmartGlassesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BC7735A70C8BE60654FF8E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses/Pods-SmartGlasses-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses/Pods-SmartGlasses-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses/Pods-SmartGlasses-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82D2020ACEFA75EF30F915B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses/Pods-SmartGlasses-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses/Pods-SmartGlasses-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses/Pods-SmartGlasses-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E3AAADDE43E7E119C5E1547 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses-SmartGlassesUITests/Pods-SmartGlasses-SmartGlassesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses-SmartGlassesUITests/Pods-SmartGlasses-SmartGlassesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartGlasses-SmartGlassesUITests/Pods-SmartGlasses-SmartGlassesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		968D3D17AFA0AA51835EF413 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartGlasses-SmartGlassesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8CA80144C9DF5BB28532002 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartGlasses-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9EEF392FC9662700964F792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartGlassesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E0A418F25F2F9A100B3A5E4 /* Sources */ = {
@@ -414,6 +598,7 @@
 		};
 		5E0A41B925F2F9A300B3A5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB90666F8298CBED58C678F /* Pods-SmartGlasses.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +621,7 @@
 		};
 		5E0A41BA25F2F9A300B3A5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C712650829BCA435FFAB4FB /* Pods-SmartGlasses.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +644,7 @@
 		};
 		5E0A41BC25F2F9A300B3A5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07619EBCFD7D5DAAF5B0B7A1 /* Pods-SmartGlassesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +667,7 @@
 		};
 		5E0A41BD25F2F9A300B3A5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32185ABD3475122A230FE10 /* Pods-SmartGlassesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +690,7 @@
 		};
 		5E0A41BF25F2F9A300B3A5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448E7AE3914378C8E5E7FDAC /* Pods-SmartGlasses-SmartGlassesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +711,7 @@
 		};
 		5E0A41C025F2F9A300B3A5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B04D035CA66CBED58C84AD /* Pods-SmartGlasses-SmartGlassesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
