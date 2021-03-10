@@ -13,6 +13,8 @@
 		5E0A419E25F2F9A300B3A5E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A419D25F2F9A300B3A5E4 /* Preview Assets.xcassets */; };
 		5E0A41A925F2F9A300B3A5E4 /* SmartGlassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41A825F2F9A300B3A5E4 /* SmartGlassesTests.swift */; };
 		5E0A41B425F2F9A300B3A5E4 /* SmartGlassesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41B325F2F9A300B3A5E4 /* SmartGlassesUITests.swift */; };
+		5E0A41C525F2FAFD00B3A5E4 /* transcribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41C425F2FAFD00B3A5E4 /* transcribe.swift */; };
+		5E7E70BE25F30A470005C718 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5E7E70BD25F30A470005C718 /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		5E0A41AF25F2F9A300B3A5E4 /* SmartGlassesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartGlassesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0A41B325F2F9A300B3A5E4 /* SmartGlassesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGlassesUITests.swift; sourceTree = "<group>"; };
 		5E0A41B525F2F9A300B3A5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E0A41C425F2FAFD00B3A5E4 /* transcribe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transcribe.swift; sourceTree = "<group>"; };
+		5E7E70BD25F30A470005C718 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +99,13 @@
 		5E0A419525F2F9A100B3A5E4 /* SmartGlasses */ = {
 			isa = PBXGroup;
 			children = (
+				5E7E70BD25F30A470005C718 /* test.m4a */,
 				5E0A419625F2F9A100B3A5E4 /* SmartGlassesApp.swift */,
 				5E0A419825F2F9A100B3A5E4 /* ContentView.swift */,
 				5E0A419A25F2F9A300B3A5E4 /* Assets.xcassets */,
 				5E0A419F25F2F9A300B3A5E4 /* Info.plist */,
 				5E0A419C25F2F9A300B3A5E4 /* Preview Content */,
+				5E0A41C425F2FAFD00B3A5E4 /* transcribe.swift */,
 			);
 			path = SmartGlasses;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E0A419E25F2F9A300B3A5E4 /* Preview Assets.xcassets in Resources */,
+				5E7E70BE25F30A470005C718 /* test.m4a in Resources */,
 				5E0A419B25F2F9A300B3A5E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E0A419925F2F9A100B3A5E4 /* ContentView.swift in Sources */,
+				5E0A41C525F2FAFD00B3A5E4 /* transcribe.swift in Sources */,
 				5E0A419725F2F9A100B3A5E4 /* SmartGlassesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
