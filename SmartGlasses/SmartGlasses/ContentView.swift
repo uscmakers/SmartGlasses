@@ -13,10 +13,18 @@ struct ContentView: View {
     var body: some View {
         VStack {
             if !transcriber.transcription.isEmpty {
-                Text(transcriber.transcription)
+                Text("You: \(transcriber.transcription)")
                     .padding()
             } else {
-                Text("Hello, world!")
+                Text("Transcription appears here")
+                    .padding()
+            }
+            if !transcriber.botResponse.isEmpty {
+                Text("Bot: \(transcriber.botResponse)")
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                    .padding()
+            } else {
+                Text("Bot response appears here")
                     .padding()
             }
             

@@ -7,10 +7,15 @@
 
 import Foundation
 import Speech
+import Alamofire
+import SwiftyJSON
 
 class Transcriber: ObservableObject {
+    let baseURL = "https://404fa16b4356.ngrok.io"
+    
     @Published var transcription = ""
     @Published var isRecording = false
+    @Published var botResponse = ""
     var recognitionTask: SFSpeechRecognitionTask? = nil
     
     func transcribeFromFile() {
@@ -46,6 +51,27 @@ class Transcriber: ObservableObject {
             }
         }
     }
+    
+    func getBotResponse() {
+        let parameters = [
+            "text": transcription
+        ]
+        
+        AF.request(baseURL, method: .post, parameters: parameters, encoding: JSONEncoding.default).response {
+            response in
+            
+            if let json = response.data {
+                do {
+                    let data = try JSON(data: json)
+                    self.botResponse = data[0]["queryResult"]["fulfillmentText"].rawValue as! String
+                    print(self.botResponse)
+                } catch {
+                    self.botResponse = "I don't understand"
+                    print("JSON error")
+                }
+            }
+        }
+    }
 
     // adapted from apple docs
     func toggleRecording() {
@@ -59,6 +85,8 @@ class Transcriber: ObservableObject {
                 isRecording = false
                 recognitionTask?.cancel()
                 recognitionTask = nil
+                // run the bot here
+                getBotResponse()
                 return
             }
             
@@ -89,12 +117,15 @@ class Transcriber: ObservableObject {
                     self.transcription = result.bestTranscription.formattedString
                 }
                 
+                // stop
                 if error != nil || isFinal {
                     audioEngine.stop()
                     inputNode.removeTap(onBus: 0)
                     
                     recognitionRequest = nil
+                    self.recognitionTask?.cancel()
                     self.recognitionTask = nil
+                    self.isRecording = false
                 }
             }
             
