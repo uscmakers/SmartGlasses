@@ -14,6 +14,7 @@
 		5E0A41A925F2F9A300B3A5E4 /* SmartGlassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41A825F2F9A300B3A5E4 /* SmartGlassesTests.swift */; };
 		5E0A41B425F2F9A300B3A5E4 /* SmartGlassesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41B325F2F9A300B3A5E4 /* SmartGlassesUITests.swift */; };
 		5E0A41C525F2FAFD00B3A5E4 /* Transcriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41C425F2FAFD00B3A5E4 /* Transcriber.swift */; };
+		5E49198F25FEC9DD00DFABEE /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E49198E25FEC9DD00DFABEE /* BLEManager.swift */; };
 		5E7E70BE25F30A470005C718 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5E7E70BD25F30A470005C718 /* test.m4a */; };
 		85A6E6B4F28FD01E8E4063CD /* Pods_SmartGlasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4EAC1686D88536872194F9 /* Pods_SmartGlasses.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		5E0A41B325F2F9A300B3A5E4 /* SmartGlassesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGlassesUITests.swift; sourceTree = "<group>"; };
 		5E0A41B525F2F9A300B3A5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E0A41C425F2FAFD00B3A5E4 /* Transcriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcriber.swift; sourceTree = "<group>"; };
+		5E49198E25FEC9DD00DFABEE /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
 		5E7E70BD25F30A470005C718 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 		6FC7002540E0D5B6BBC9FB4E /* Pods-SmartGlasses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGlasses.debug.xcconfig"; path = "Target Support Files/Pods-SmartGlasses/Pods-SmartGlasses.debug.xcconfig"; sourceTree = "<group>"; };
 		8E4EAC1686D88536872194F9 /* Pods_SmartGlasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGlasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 				5E0A419F25F2F9A300B3A5E4 /* Info.plist */,
 				5E0A419C25F2F9A300B3A5E4 /* Preview Content */,
 				5E0A41C425F2FAFD00B3A5E4 /* Transcriber.swift */,
+				5E49198E25FEC9DD00DFABEE /* BLEManager.swift */,
 			);
 			path = SmartGlasses;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E0A419925F2F9A100B3A5E4 /* ContentView.swift in Sources */,
+				5E49198F25FEC9DD00DFABEE /* BLEManager.swift in Sources */,
 				5E0A41C525F2FAFD00B3A5E4 /* Transcriber.swift in Sources */,
 				5E0A419725F2F9A100B3A5E4 /* SmartGlassesApp.swift in Sources */,
 			);

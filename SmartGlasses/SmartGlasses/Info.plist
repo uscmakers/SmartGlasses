@@ -2,8 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key></key>
-	<string></string>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Connect to your smart glasses</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>SPEEEEEEEECH</string>
 	<key>CFBundleDevelopmentRegion</key>

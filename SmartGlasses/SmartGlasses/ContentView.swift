@@ -8,10 +8,79 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var bleManager = BLEManager()
     @ObservedObject var transcriber = Transcriber()
     
     var body: some View {
         VStack {
+            Text("Bluetooth Devices")
+                .font(.largeTitle)
+                .frame(maxWidth: .infinity, alignment: .center)
+            
+            List(bleManager.peripherals) { peripheral in
+                HStack {
+                    Text(peripheral.name)
+                    Spacer()
+                    Text(String(peripheral.rssi))
+                }
+            }.frame(height: 100)
+
+            Text("STATUS")
+                .font(.headline)
+
+            // Status goes here
+            if bleManager.isSwitchedOn {
+                Text("Bluetooth is switched on")
+                    .foregroundColor(.green)
+            }
+            else {
+                Text("Bluetooth is NOT switched on")
+                    .foregroundColor(.red)
+            }
+            
+            if !bleManager.characteristicValue.isEmpty {
+                Text("Characteristic Value: \(bleManager.characteristicValue)")
+            } else {
+                Text("Characteristic Value: None")
+            }
+
+            HStack {
+                VStack (spacing: 10) {
+                    Button(action: {
+                        self.bleManager.startScanning()
+                    }) {
+                        Text("Start Scanning")
+                    }
+                    Button(action: {
+                        self.bleManager.stopScanning()
+                    }) {
+                        Text("Stop Scanning")
+                    }
+                }.padding()
+                
+                VStack (spacing: 10) {
+                    Button(action: {
+                        self.bleManager.getCharacteristics()
+                    }) {
+                        Text("Get Characteristics")
+                    }
+                    
+                    Button(action: {
+                        self.bleManager.write(text: "on")
+                    }) {
+                        Text("Turn on flashlight")
+                    }
+                    
+                    Button(action: {
+                        self.bleManager.write(text: "off")
+                    }) {
+                        Text("Turn off flashlight")
+                    }
+                }.padding()
+            }
+            
+            // voice
+            
             if !transcriber.transcription.isEmpty {
                 Text("You: \(transcriber.transcription)")
                     .padding()
