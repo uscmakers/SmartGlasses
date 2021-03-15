@@ -16,6 +16,10 @@
 
 #define LED_BUILTIN 4
 
+BLECharacteristic pCharacteristic(CHARACTERISTIC_UUID, 
+  BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_NOTIFY | BLECharacteristic::PROPERTY_WRITE);
+
+// get writes from client device
 class BLECallbacks: public BLECharacteristicCallbacks {
     void onWrite(BLECharacteristic *characteristic) {
       std::string value = characteristic->getValue();
@@ -27,9 +31,13 @@ class BLECallbacks: public BLECharacteristicCallbacks {
         
         if (value == "on") {
           digitalWrite(LED_BUILTIN, HIGH);
+          pCharacteristic.setValue("The LED is on");
+          pCharacteristic.notify();
           Serial.println("turning on led");
         } else if (value == "off") {
           Serial.println("turning off led");
+          pCharacteristic.setValue("The LED is off");
+          pCharacteristic.notify();
           digitalWrite(LED_BUILTIN, LOW);
         }
         
@@ -37,9 +45,6 @@ class BLECallbacks: public BLECharacteristicCallbacks {
       }
     }
 };
-
-BLECharacteristic pCharacteristic(CHARACTERISTIC_UUID, 
-  BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_NOTIFY | BLECharacteristic::PROPERTY_WRITE);
 
 void setup() {
   Serial.begin(115200);
@@ -54,7 +59,7 @@ void setup() {
   pService->addCharacteristic(&pCharacteristic);
   pCharacteristic.setCallbacks(new BLECallbacks());
 
-  pCharacteristic.setValue("Commands");
+  pCharacteristic.setValue("The LED is off");
   pService->start();
  
   BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
@@ -67,9 +72,5 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  
   delay(2000);
-//  pCharacteristic.setValue("Commands");
-//  pCharacteristic.notify();
 }

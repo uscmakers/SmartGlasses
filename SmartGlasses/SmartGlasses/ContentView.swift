@@ -37,6 +37,12 @@ struct ContentView: View {
                 Text("Bluetooth is NOT switched on")
                     .foregroundColor(.red)
             }
+            
+            if !bleManager.characteristicValue.isEmpty {
+                Text("Characteristic Value: \(bleManager.characteristicValue)")
+            } else {
+                Text("Characteristic Value: None")
+            }
 
             HStack {
                 VStack (spacing: 10) {
@@ -57,6 +63,18 @@ struct ContentView: View {
                         self.bleManager.getCharacteristics()
                     }) {
                         Text("Get Characteristics")
+                    }
+                    
+                    Button(action: {
+                        self.bleManager.write(text: "on")
+                    }) {
+                        Text("Turn on flashlight")
+                    }
+                    
+                    Button(action: {
+                        self.bleManager.write(text: "off")
+                    }) {
+                        Text("Turn off flashlight")
                     }
                 }.padding()
             }

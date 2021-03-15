@@ -19,9 +19,11 @@ class BLEManager: NSObject, ObservableObject, CBPeripheralDelegate, CBCentralMan
     
     var myCentral: CBCentralManager!
     var smartGlasses: CBPeripheral!
+    var characteristic: CBCharacteristic!
     
     @Published var isSwitchedOn = false
     @Published var peripherals = [Peripheral]()
+    @Published var characteristicValue = ""
     
     override init() {
         super.init()
@@ -81,7 +83,9 @@ class BLEManager: NSObject, ObservableObject, CBPeripheralDelegate, CBCentralMan
         if let characteristics = service.characteristics {
             for characteristic in characteristics {
 //                print("[Characteristic \(characteristic.uuid)] \(String(describing: characteristic.value))")
+                self.characteristic = characteristic
                 peripheral.readValue(for: characteristic)
+                peripheral.setNotifyValue(true, for: characteristic)
             }
         }
     }
@@ -89,11 +93,21 @@ class BLEManager: NSObject, ObservableObject, CBPeripheralDelegate, CBCentralMan
     // Read value
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         print("[Characteristic \(characteristic.uuid)] \(String(data: characteristic.value!, encoding: String.Encoding.ascii) ?? "err")")
+        characteristicValue = String(data: characteristic.value!, encoding: String.Encoding.ascii) ?? "err"
+    }
+    
+    func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?) {
+        print("wrote correctly!")
     }
     
     func getCharacteristics() {
         print("Getting characteristics")
         smartGlasses.discoverServices(nil)
+    }
+    
+    func write(text: String) {
+        let data = text.data(using: .utf8)!
+        smartGlasses.writeValue(data, for: characteristic, type: .withResponse)
     }
     
     func startScanning() {
