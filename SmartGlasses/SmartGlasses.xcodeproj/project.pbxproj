@@ -14,6 +14,10 @@
 		5E0A419E25F2F9A300B3A5E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A419D25F2F9A300B3A5E4 /* Preview Assets.xcassets */; };
 		5E0A41A925F2F9A300B3A5E4 /* SmartGlassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41A825F2F9A300B3A5E4 /* SmartGlassesTests.swift */; };
 		5E0A41B425F2F9A300B3A5E4 /* SmartGlassesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A41B325F2F9A300B3A5E4 /* SmartGlassesUITests.swift */; };
+		5E20E749260D7D2000F606F2 /* Recognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20E748260D7D2000F606F2 /* Recognizer.swift */; };
+		5E5815B0260D81A500AC0630 /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5E5815AF260D81A500AC0630 /* image.jpeg */; };
+		5E5815B5260D849500AC0630 /* monkey.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5E5815B4260D849500AC0630 /* monkey.jpeg */; };
+		5E5815BA260D85A500AC0630 /* boat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5E5815B9260D85A500AC0630 /* boat.jpeg */; };
 		B8067DF5E3A4D4BB38966D36 /* Pods_SmartGlassesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D74EF9A43339A385DE07BD6 /* Pods_SmartGlassesTests.framework */; };
 		EF09CF9A601FC8E9F322CF03 /* Pods_SmartGlasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867FF157B4CEC83E148570E4 /* Pods_SmartGlasses.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +59,10 @@
 		5E0A41AF25F2F9A300B3A5E4 /* SmartGlassesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartGlassesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0A41B325F2F9A300B3A5E4 /* SmartGlassesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGlassesUITests.swift; sourceTree = "<group>"; };
 		5E0A41B525F2F9A300B3A5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E20E748260D7D2000F606F2 /* Recognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recognizer.swift; sourceTree = "<group>"; };
+		5E5815AF260D81A500AC0630 /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
+		5E5815B4260D849500AC0630 /* monkey.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monkey.jpeg; sourceTree = "<group>"; };
+		5E5815B9260D85A500AC0630 /* boat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boat.jpeg; sourceTree = "<group>"; };
 		867FF157B4CEC83E148570E4 /* Pods_SmartGlasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGlasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32185ABD3475122A230FE10 /* Pods-SmartGlassesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGlassesTests.release.xcconfig"; path = "Target Support Files/Pods-SmartGlassesTests/Pods-SmartGlassesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,11 +120,15 @@
 		5E0A419525F2F9A100B3A5E4 /* SmartGlasses */ = {
 			isa = PBXGroup;
 			children = (
+				5E5815B9260D85A500AC0630 /* boat.jpeg */,
+				5E5815AF260D81A500AC0630 /* image.jpeg */,
+				5E5815B4260D849500AC0630 /* monkey.jpeg */,
 				5E0A419625F2F9A100B3A5E4 /* SmartGlassesApp.swift */,
 				5E0A419825F2F9A100B3A5E4 /* ContentView.swift */,
 				5E0A419A25F2F9A300B3A5E4 /* Assets.xcassets */,
 				5E0A419F25F2F9A300B3A5E4 /* Info.plist */,
 				5E0A419C25F2F9A300B3A5E4 /* Preview Content */,
+				5E20E748260D7D2000F606F2 /* Recognizer.swift */,
 			);
 			path = SmartGlasses;
 			sourceTree = "<group>";
@@ -280,7 +292,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5815B0260D81A500AC0630 /* image.jpeg in Resources */,
 				5E0A419E25F2F9A300B3A5E4 /* Preview Assets.xcassets in Resources */,
+				5E5815BA260D85A500AC0630 /* boat.jpeg in Resources */,
+				5E5815B5260D849500AC0630 /* monkey.jpeg in Resources */,
 				5E0A419B25F2F9A300B3A5E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E20E749260D7D2000F606F2 /* Recognizer.swift in Sources */,
 				5E0A419925F2F9A100B3A5E4 /* ContentView.swift in Sources */,
 				5E0A419725F2F9A100B3A5E4 /* SmartGlassesApp.swift in Sources */,
 			);

@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    let recognizer = Recognizer()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Hello, world!")
+                .padding()
+            Button(action: {
+                recognizer.detectLabels()
+            }) {
+                Text("Detect labels")
+                    .padding()
+            }
+        }
+        
     }
 }
 
