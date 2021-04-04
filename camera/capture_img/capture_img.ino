@@ -5,10 +5,8 @@
 #include "soc/soc.h"           // Disable brownout problems
 #include "soc/rtc_cntl_reg.h"  // Disable brownout problems
 #include "driver/rtc_io.h"
-#include <EEPROM.h>            // read and write from flash memory
 
 // define the number of bytes you want to access
-#define EEPROM_SIZE 1
 
 // Pin definition for camera model
 #define PWDN_GPIO_NUM 32
@@ -27,12 +25,8 @@
 #define VSYNC_GPIO_NUM 25
 #define HREF_GPIO_NUM 23
 #define PCLK_GPIO_NUM 22
- 
-RTC_DATA_ATTR int pictureNumber = 0;
 
-void take_photo(){
-  pinMode(GPIO_NUM_13, INPUT_PULLUP);  //set trigger to end deep sleep
-  
+void capture_img(){  
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); //disable brownout detector
 
   //set camera configuration
@@ -57,15 +51,14 @@ void take_photo(){
   config.pin_reset = RESET_GPIO_NUM;
   config.xclk_freq_hz = 20000000;
   config.pixel_format = PIXFORMAT_JPEG;
-
-  pinMode(4, INPUT);
-  digitalWrite(4, LOW);
-  rtc_gpio_hold_dis(GPIO_NUM_4);
   
   config.frame_size = FRAMESIZE_UXGA; // FRAMESIZE_ + QVGA|CIF|VGA|SVGA|XGA|SXGA|UXGA
   config.jpeg_quality = 10;
   config.fb_count = 2;
- 
+
+  //
+  rtc_gpio_hold_dis(GPIO_NUM_4);
+  
   // initialize camera
   esp_err_t err = esp_camera_init(&config);
   if (err != ESP_OK) return;
@@ -74,51 +67,50 @@ void take_photo(){
   sensor_t * s = esp_camera_sensor_get();
   s->set_brightness(s, 2);
   s->set_contrast(s, -0.5);
-  s->set_saturation(s, 0);
+  s->set_saturation(s, 1);
  
   //check SD card 
-  if(!SD_MMC.begin()) return;
-  uint8_t cardType = SD_MMC.cardType();
-  if(cardType == CARD_NONE) return;
-  
-  // initialize EEPROM with predefined size
-  EEPROM.begin(EEPROM_SIZE);
-  EEPROM.write(0, pictureNumber);
-  EEPROM.commit();
-  pictureNumber++;
-  Serial.println(EEPROM.read(0));
-  Serial.println(pictureNumber);
-
-  camera_fb_t * fb = NULL;
-  if (EEPROM.read(0) == 0){
+  if(!SD_MMC.begin()) {
+    Serial.println("no SD");
     return;
   }
-  else{
-    //take picture 
-    fb = esp_camera_fb_get();
-    if(!fb) return;
+  uint8_t cardType = SD_MMC.cardType();
+  if(cardType == CARD_NONE) {
+    Serial.println("no card");
+    return;
   }
-  
+
+  //capture image
+  camera_fb_t * fb = NULL;
+  fb = esp_camera_fb_get();
+  if(!fb) return;
    
   // create new path
-  String path = "/picture" + String(pictureNumber) +".jpg";
+  String path = "/img_0.png";
   fs::FS &fs = SD_MMC;
 
   //create and save file
   File file = fs.open(path.c_str(), FILE_WRITE);
-  if(!file) return;
+  if(!file) {
+    Serial.println("no file");
+    return;
+  }
   else {
-    file.write(fb->buf, fb->len); // payload (image), payload length
+    file.write(fb->buf, fb->len);   //payload (image), payload length
   }
   file.close();
   esp_camera_fb_return(fb);
-    
+
+  //turn off flash
+  pinMode(4, OUTPUT);
+  digitalWrite(4,LOW);
+  rtc_gpio_hold_en(GPIO_NUM_4);
 }
   
 void setup() {
-  take_photo();
-  pinMode(4, OUTPUT);
-  rtc_gpio_hold_en(GPIO_NUM_4);
+  Serial.begin(115200);
+  
+  capture_img();
   
   esp_sleep_enable_ext0_wakeup(GPIO_NUM_13, 0);
   esp_deep_sleep_start();
