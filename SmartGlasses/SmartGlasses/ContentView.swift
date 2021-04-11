@@ -13,43 +13,17 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Bluetooth Devices")
-                .font(.largeTitle)
-                .frame(maxWidth: .infinity, alignment: .center)
-            
-            List(bleManager.peripherals) { peripheral in
-                HStack {
-                    Text(peripheral.name)
-                    Spacer()
-                    Text(String(peripheral.rssi))
-                }
-            }.frame(height: 100)
-
-            Text("STATUS")
-                .font(.headline)
-
-            // Status goes here
-            if bleManager.isSwitchedOn {
-                Text("Bluetooth is switched on")
-                    .foregroundColor(.green)
-            }
-            else {
-                Text("Bluetooth is NOT switched on")
-                    .foregroundColor(.red)
-            }
-            
-            if !bleManager.characteristicValue.isEmpty {
-                Text("Characteristic Value: \(bleManager.characteristicValue)")
+            if bleManager.image != nil {
+                Image(uiImage: bleManager.image)
             } else {
-                Text("Characteristic Value: None")
+                Text("No image yet")
             }
-
             HStack {
                 VStack (spacing: 10) {
                     Button(action: {
                         self.bleManager.startScanning()
                     }) {
-                        Text("Start Scanning")
+                        Text("Connect")
                     }
                     Button(action: {
                         self.bleManager.stopScanning()
@@ -60,19 +34,19 @@ struct ContentView: View {
                 
                 VStack (spacing: 10) {
                     Button(action: {
-                        self.bleManager.getCharacteristics()
+                        self.bleManager.write(text: "f", uuid: bleManager.IMAGE_CHARACTERISTIC_UUID)
                     }) {
-                        Text("Get Characteristics")
+                        Text("Get image")
                     }
                     
                     Button(action: {
-                        self.bleManager.write(text: "on")
+                        self.bleManager.write(text: "on", uuid: bleManager.LED_CHARACTERISTIC_UUID)
                     }) {
                         Text("Turn on flashlight")
                     }
                     
                     Button(action: {
-                        self.bleManager.write(text: "off")
+                        self.bleManager.write(text: "off", uuid: bleManager.LED_CHARACTERISTIC_UUID)
                     }) {
                         Text("Turn off flashlight")
                     }

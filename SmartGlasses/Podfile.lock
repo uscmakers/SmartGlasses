@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (5.4.1)
+  - RxBluetoothKit (6.0.0):
+    - RxSwift (~> 5.1)
+  - RxSwift (5.1.2)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - RxBluetoothKit
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - RxBluetoothKit
+    - RxSwift
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  RxBluetoothKit: dad22912b15b74a40df8f60057f218d4e851746d
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 577a7174419738b3ab7e2f26356528f2bd9db714
+PODFILE CHECKSUM: 53388acffe04ff27185e2ee27e09e95f6303def1
 
 COCOAPODS: 1.9.2
