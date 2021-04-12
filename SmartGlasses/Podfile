@@ -2,19 +2,21 @@
 # platform :ios, '9.0'
 
 target 'SmartGlasses' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-  pod 'GoogleMLKit/ImageLabeling'
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
+    pod 'GoogleMLKit/ImageLabeling'
+    pod 'Alamofire', '~> 5.2'
+    pod 'SwiftyJSON', '~> 4.0'
+    pod 'RxBluetoothKit'
 
-  # Pods for SmartGlasses
+    # Pods for SmartGlasses
 
-  target 'SmartGlassesTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+    target 'SmartGlassesTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
 
-  target 'SmartGlassesUITests' do
-    # Pods for testing
-  end
-
+    target 'SmartGlassesUITests' do
+        # Pods for testing
+    end
 end
