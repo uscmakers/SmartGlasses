@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let recognizer = Recognizer()
     @ObservedObject var bleManager = BLEManager()
     @ObservedObject var transcriber = Transcriber()
     
@@ -37,6 +38,13 @@ struct ContentView: View {
                         self.bleManager.write(text: "f", uuid: bleManager.IMAGE_CHARACTERISTIC_UUID)
                     }) {
                         Text("Get image")
+                    }
+
+                    Button(action: {
+                        recognizer.detectLabels()
+                    }) {
+                        Text("Detect labels")
+                            .padding()
                     }
                     
                     Button(action: {
