@@ -11,9 +11,7 @@ int ledPin = 4;
 void setup() {
 
   SD.begin(SD_ChipSelectPin);
-  //audio.CSPin = SD_ChipSelectPin;
   pinMode(ledPin, OUTPUT);
-  //digitalWrite(ledPin, HIGH);
   Serial.begin(115200);
 
 }
@@ -21,16 +19,14 @@ void setup() {
 void loop() {
   if(Serial.available()) {
     
-    //digitalWrite(ledPin, HIGH);
+
     if(!flag) {
-      //digitalWrite(ledPin, HIGH);
-      //Serial.readString();
-      //if(Serial.readString()=="START\r\n") {
+
       digitalWrite(ledPin, HIGH);
-      //digitalWrite(ledPin, HIGH);
+
       flag = true;
       myFile = SD.open("received.wav", FILE_WRITE);
-      //}
+
     }
     if(flag) {
       myFile.write(Serial.read());
@@ -42,7 +38,7 @@ void loop() {
 
   } else {
     if(flag && millis()-start >= 500) {
-      //digitalWrite(ledPin, LOW);
+
       myFile.close();
       flag = false;
       digitalWrite(ledPin, LOW);
