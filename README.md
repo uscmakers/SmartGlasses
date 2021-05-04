@@ -89,7 +89,7 @@ You can now connect your iOS device and press the `Run` button at the top left t
 
 **ESP-32 CAM**
 
-Follow these [instructions](https://randomnerdtutorials.com/program-upload-code-esp32-cam/#:~:text=2)%20Go%20to%20Tools%20%3E%20Port,ESP32-CAM%20is%20connected%20to.&text=4)%20Then%2C%20click%20the%20Upload,successfully%20uploaded%20to%20your%20board.) to set up the Arduino environment so you can run the ESP-32 CAM sketch. It will also show you how to upload the sketch to the ESP-32 CAM.
+Follow these [instructions](https://randomnerdtutorials.com/program-upload-code-esp32-cam/) to set up the Arduino environment so you can run the ESP-32 CAM sketch. It will also show you how to upload the sketch to the ESP-32 CAM.
 
 Upload the sketch from `Device/` to the ESP-32 CAM.
 
